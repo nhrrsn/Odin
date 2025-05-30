@@ -28,6 +28,6 @@ test_raymath_Vector3Angle :: proc(t: ^testing.T) {
     v2v1 := rl.Vector3Angle(v2, v1)
 
     log.infof("v1v2: %f v2v1: %f", v1v2, v2v1)
-    testing.expect(t, v1v2 == -v2v1)
+    testing.expect(t, v1v2 == v2v1)
 }
 
